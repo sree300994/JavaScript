@@ -49,8 +49,10 @@ var numbers = [10,20,30,10,20,40]
 function unique(numbers) {
 	var number = [];
 	numbers.forEach(function(nu){
+		// console.log(nu);
 		if (number.indexOf(nu) < 0) {
 			number.push(nu);
+			// console.log(number)
 		}
 	});
 	return number

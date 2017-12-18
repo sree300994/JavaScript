@@ -18,12 +18,13 @@ function updateInventory(currentInventory,newInventory){
 		var product = currentInventory.find(function(inventory){
 			return inventory.name == productDetail.name;
 		});
+			console.log(product);
 		if(typeof product == "undefined"){
 			console.log(productDetail.name + 'not found in inventory adding it ...')
 			currentInventory.push(productDetail);
 		}
 		else {
-			console.log("Updating stock of" + product.name + "by" + productDetail.stock);
+			console.log("Updating stock of " + product.name + " by " + productDetail.stock);
 			product.stock += productDetail.stock;
 		}
 	});

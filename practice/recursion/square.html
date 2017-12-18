@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Square Of Number</title>
+</head>
+<body>
+<h3>Result: <span id="text"></span></h3>
+<script>
+	var textHandle = document.getElementById('text');
+	var square = function(number,exponent) {
+		if (exponent === 0) {
+			return 1;
+		} else {
+			return number * square(number,exponent -1);
+		}
+		return square;
+	}
+	textHandle.innerHTML = square(4,2);
+	// console.log(square(4,0));
+</script>
+</body>
+</html>

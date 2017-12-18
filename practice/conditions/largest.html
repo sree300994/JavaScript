@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Largest Number</title>
+</head>
+<body>
+<script>
+	var num1 = window.prompt("Enter the first number", 0);
+	// console.log(num1);
+
+	var num2 = window.prompt("Enter the second number", 0);
+	// console.log(num2);
+	
+	var num3 = window.prompt("Enter the third number", 0);
+	// console.log(num3);
+	
+	var num4 = window.prompt("Enter the fourth number", 0);
+	// console.log(num4);
+	
+	var num5 = window.prompt("Enter the fifth number", 0);
+	// console.log(num5);
+	
+	array = []
+	array.push(num1, num2, num3, num4, num5);
+	console.log(array);
+
+	var max = array[0];
+	console.log(max);
+
+	array.forEach(function(number) {
+		if (number > max) {
+			max = number;
+			// console.log(max);
+		} 
+	});
+
+	console.log("The maximum number in above numbers is " + max);
+
+</script>
+</body>
+</html>

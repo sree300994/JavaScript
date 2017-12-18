@@ -11,10 +11,11 @@ function countwin(winnerlist, country){
 	var list = {};
 	var count = 0;
 	winnerlist.forEach(function(winner){
+		// console.log(winner.country);
 		if(winner.country == country){
 			count ++;
+			list[winner.team] = count;
 		}
-		list[winner.team] = count;
 	});
 	return list;
 }

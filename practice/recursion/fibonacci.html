@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonacci Series</title>
+</head>
+<body>
+<h3>Result : <span id="text"></span></h3>
+<script>
+	var textHandle = document.getElementById('text');
+	var fibonacci = function(number) {
+		if (number === 0) {
+			return [0,1];
+		} else {
+			var num = fibonacci(number - 1);
+			num.push(num[num.length - 1] + num[num.length - 2]);
+			return num
+		}
+		return number;
+	};
+	textHandle.innerHTML = fibonacci(8);
+</script>
+</body>
+</html>

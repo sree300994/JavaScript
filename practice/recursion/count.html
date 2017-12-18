@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count of Repeated object</title>
+</head>
+<body>
+<script>
+	Array.prototype.count = function(object) {
+		var count = 0;
+		this.forEach(function(n){
+			if (n === object) {
+				count ++;
+			}
+		})
+		return count;	
+	};
+	var array = [3,"a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+	// console.log(array.count("a"));
+	var hash = {};
+	array.forEach(function(object){
+		hash[object] = array.count(object)
+	})
+	var max = hash[0];
+	for (var value in hash) {
+		if (value > max) {
+			max = value
+		}
+	}
+	console.log(value + " appears " + hash[value] + "times"); 
+	// for (var key in hash) {
+	// 	console.log(key + " appears " + hash[key] + "times");
+	// }
+</script>
+</body>
+</html>

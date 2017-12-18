@@ -6,8 +6,8 @@ function add(){
 }
 
 add();
-console.log(n1);
-console.log(n2);
+// console.log(n1);
+// console.log(n2);
 
 // function add(){
 	// variable defined inside a function without the keyword var will make it a global variable, it is made available outside the function

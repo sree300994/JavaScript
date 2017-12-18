@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day Sayer</title>
+</head>
+<body>
+<input type="date" id="body">
+<h2>Yesterday is <span id="yesterday"></span></h2>
+<h2>Today is <span id="today"></span></h2>
+<h2>Tommorow is <span id="tommorow"></span></h2>
+<script>
+	// var bodyHandle = document.getElementById('body');
+	var yesterdayHandle = document.getElementById('yesterday');
+	var todayHandle = document.getElementById('today');
+	var tommorowHandle = document.getElementById('tommorow');
+	var today = new Date().getDay();
+	function date(day, handle) {
+		switch (day) {
+		    case 0:
+		        handle.innerHTML = "Sunday";
+		        break;
+		    case 1:
+		        handle.innerHTML = "Monday";
+		        break;
+		    case 2:
+		        handle.innerHTML = "Tuesday";
+		        break;
+		    case 3:
+		        handle.innerHTML = "Wednesday";
+		        break;
+		    case 4:
+		        handle.innerHTML = "Thursday";
+		        break;
+		    case 5:
+		        handle.innerHTML = "Friday";
+		        break;
+		    case 6:
+		        handle.innerHTML = "Saturday";
+		}
+	}
+	date(today, todayHandle);
+	date(today - 1, yesterdayHandle);
+	date(today + 1, tommorowHandle);
+	date(today == 6 ? 0 : (today + 1), tommorowHandle);
+	date(today == 0 ? 6 : (today - 1), yesterdayHandle);
+</script>
+</body>
+</html>

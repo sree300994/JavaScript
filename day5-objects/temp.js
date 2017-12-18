@@ -46,7 +46,7 @@ console.log("The temperature at " + data.name + "(" + data.coord.lon + "," + dat
 
 
 // ES 6
-console.log(`The temperature at ${data.name} (${data.coord.lon} , ${data.coord.lat}) is ${data.main.temp}, the maximum temperature it will reach is ${data.main.temp_max} and the minimum temperature will be ${data.main.temp_min}. It is expected to have ${data.weather[0].description}`);
+console.log(`The temperature at ${data.name} (${data.coord.lon}, ${data.coord.lat}) is ${data.main.temp}, the maximum temperature it will reach is ${data.main.temp_max} and the minimum temperature will be ${data.main.temp_min}. It is expected to have ${data.weather[0].description}`);
 
 
 

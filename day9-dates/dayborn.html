@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find the Day you Born</title>
+</head>
+<body>
+	<label>Enter Date Of Birth</label>
+	<input type="date" id="dob" />
+	<h2 id="msg"> </h2>
+	<script>
+		var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+		var dobHandle = document.getElementById('dob');
+		var msgHandle = document.getElementById('msg');
+
+		dobHandle.addEventListener('change', function(){
+			var dateInput = dobHandle.value.split("-");
+			var userDate = new Date(dateInput[0], dateInput[1] - 1, dateInput[2]);
+			msgHandle.innerHTML = "You were born on a " + days[userDate.getDay()];
+		});
+		// dobHandle.onchange = function(){
+		// 	var dateInput = dobHandle.value.split("-");
+		// 	var userDate = new Date(dateInput[0], dateInput[1] - 1, dateInput[2]);
+		// 	msgHandle.innerHTML = "You were born on a " + days[userDate.getDay()];
+		// };
+	</script>
+</body>
+</html>
+
+
+
+
+
+

@@ -17,7 +17,7 @@ console.log(paragraph.lastIndexOf('yesterday')); // -1
 console.log(password.charAt(2)); // c
 console.log(sentence.search('bangalore')); // 8
 
-console.log(password.includes("secret")); // true
+console.log(password.includes("sec")); // true
 
 // "*" * 3
 console.log("*".repeat(3));

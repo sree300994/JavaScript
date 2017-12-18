@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum of Multiples of 3 and 5</title>
+</head>
+<body>
+<script>
+	var number = window.prompt("Enter the number", 000);
+	var sum = 0;
+	for (var num = 0; num < number; num ++) {
+		if (num % 3 == 0 || num % 5 == 0) {
+			sum += num;
+			// console.log(sum);
+		}
+	}
+	console.log(sum);
+</script>
+</body>
+</html>

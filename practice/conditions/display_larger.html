@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display the larger number</title>
+</head>
+<body>
+	<script>
+		var num1 = window.prompt("Enter the first number", "0");
+		console.log(num1);
+		var num2 = window.prompt("Enter the second number", "0");
+		console.log(num2);
+
+		if (parseInt(num1) > parseInt(num2)) {
+			console.log("The larger number in " + num1 + " and" + num2 + " is" + num1 );
+		} else if (parseInt(num1) < parseInt(num2)) {
+			console.log("The larger number in " + num1 + " and" + num2 + " is" + num2 );
+		} else {
+			console.log("Both numbers" + num1 + " and" + num2 + " are equal");
+		}
+	</script>
+</body>
+</html>
+
+

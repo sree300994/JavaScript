@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Even or Odd</title>
+</head>
+<body>
+<h3>Result: <span id="text"></span></h3>
+<script>
+	var textHandle = document.getElementById('text');
+	var find = function(number) {
+		if (number % 2 === 0) {
+			return "even";
+		} else {
+			return "odd";
+		}
+		return find;
+	}
+	textHandle.innerHTML = find(5);
+</script>
+</body>
+</html>

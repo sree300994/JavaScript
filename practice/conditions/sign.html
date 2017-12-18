@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Of Product</title>
+</head>
+<body>
+<script>
+	var num1 = window.prompt("Enter the first number", 0);
+	console.log(num1);
+	var num2 = window.prompt("Enter the second number", 0);
+	console.log(num2);
+	var num3 = window.prompt("Enter the third number", 0);
+	console.log(num3);
+
+	var product = num1 * num2 * num3
+	console.log(product);
+
+	if (parseInt(product) > 0) {
+		alert("The sign is +");
+	} else if (parseInt(product) < 0) {
+		alert("The sign is -");
+	}
+
+</script>
+</body>
+</html>

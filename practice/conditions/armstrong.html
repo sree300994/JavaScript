@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Armstrong Number</title>
+</head>
+<body>
+<script>
+	var numbers = window.prompt("Enter the Number", 000);
+	var str = numbers.toString().split("");
+	// console.log(str);
+	number = 0;
+	str.forEach(function(num){
+		number += parseInt(num) ** 3;
+	});
+
+	if (number == numbers) {
+		console.log("It is a Armstrong number");
+	} else {
+		console.log("It is not a Armstrong number");
+	}
+</script>
+</body>
+</html>
